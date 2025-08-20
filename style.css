@@ -11,47 +11,46 @@ body {
     color: #000;
 }
 
-/* Header */
+/* Header fijo efecto Difference */
+.header-fixed {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.header-fixed h1 {
+    font-weight: normal;
+    font-size: 2rem; /* ajustable */
+    color: white;
+    mix-blend-mode: difference;
+}
+
+.header-fixed sup {
+    font-size: 0.7rem; /* ajustable */
+}
+
+/* Header original (negro, no fijo) */
 header {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 10px 20px;
 }
 
-header .left,
-header .right {
-    font-size: 0.7rem; /* mismo tamaño que el superscript */
-    color: #000;
-}
-
-header .center {
-    text-align: center;
-    position: relative;
-}
-
-header h1 {
-    font-weight: normal; /* Sala en regular */
-    font-size: 1rem; /* tamaño principal */
-    color: #000;
-}
-
-header h1 sup.subtitle {
-    font-size: 0.7rem; /* superscript más pequeño */
-    position: relative;
-    top: -0.5em;
-    left: 0.2em;
-    mix-blend-mode: difference; /* efecto tipo "Difference" */
-    color: #fff;
+header .subtitle {
+    font-size: 0.7rem;
 }
 
 /* Galería */
 main.gallery {
-    margin-top: 60px; /* espacio para el header */
+    margin-top: 100px; /* espacio para headers */
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 40px;
+    gap: 40px; /* espacio entre filas y columnas */
     padding: 20px;
 }
 
@@ -100,11 +99,10 @@ main.gallery {
 
 .artwork .info p {
     margin: 2px 0;
+    font-size: 0.7rem; /* mismo tamaño que el superscript y textos negros */
 }
 
-.artwork .info .title,
-.artwork .info .artist,
-.artwork .info .materials,
-.artwork .info .dimensions {
-    font-size: 0.7rem; /* tamaño estándar */
+/* Espacio al final para scroll */
+.spacer {
+    height: 500px; /* ajustable */
 }
