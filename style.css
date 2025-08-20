@@ -51,7 +51,7 @@ main.gallery {
     margin-top: 60px; /* espacio para el header */
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
+    gap: 40px;
     padding: 20px;
 }
 
