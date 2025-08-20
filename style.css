@@ -34,13 +34,38 @@ header .subtitle {
     font-size: 0.8rem;
 }
 
-/* Espacio para que el contenido no quede debajo del header */
+/* Galería */
 main.gallery {
-    margin-top: 100px; /* ajusta según el alto del header */
+    margin-top: 100px; /* espacio para el header */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(5, 1fr); /* 5 columnas fijas */
     gap: 20px;
     padding: 20px;
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 1200px) {
+    main.gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    main.gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    main.gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    main.gallery {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Cada obra */
