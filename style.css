@@ -106,5 +106,5 @@ main.gallery {
 .artwork .info .artist,
 .artwork .info .materials,
 .artwork .info .dimensions {
-    font-size: 1rem; /* tamaño estándar */
+    font-size: 0.7rem; /* tamaño estándar */
 }
