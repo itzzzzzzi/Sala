@@ -9,10 +9,27 @@ body {
     font-family: "Times New Roman", serif;
     background-color: #fff;
     color: #000;
-    font-size: 0.7rem; /* todo el texto por defecto */
+    font-size: 0.7rem;
+    position: relative;
 }
 
-/* Header fijo efecto Difference */
+/* Header superior (send / by) */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .left {
+    text-align: left;
+}
+
+header .right {
+    text-align: right;
+}
+
+/* Header fijo Sala + Permanent */
 .header-fixed {
     position: fixed;
     top: 0;
@@ -20,29 +37,19 @@ body {
     transform: translateX(-50%);
     z-index: 1000;
     pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header-fixed h1 {
     font-weight: normal;
-    font-size: 2rem; /* solo Sala es más grande */
-    color: white;
-    mix-blend-mode: difference;
+    font-size: 2rem;
+    color: black; /* negro sobre fondo blanco */
+    mix-blend-mode: difference; /* cambia sobre imágenes */
 }
 
 .header-fixed sup {
-    font-size: 0.7rem;
-}
-
-/* Header original (negro, no fijo) */
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px 20px;
-}
-
-header .subtitle {
     font-size: 0.7rem;
 }
 
@@ -51,34 +58,14 @@ main.gallery {
     margin-top: 100px; /* espacio para headers */
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 40px; /* espacio entre filas y columnas */
+    gap: 40px;
     padding: 20px;
 }
 
-/* Ajuste para pantallas pequeñas */
-@media (max-width: 1200px) {
-    main.gallery {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-@media (max-width: 992px) {
-    main.gallery {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    main.gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    main.gallery {
-        grid-template-columns: 1fr;
-    }
-}
+@media (max-width: 1200px) { main.gallery { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 992px)  { main.gallery { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 768px)  { main.gallery { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px)  { main.gallery { grid-template-columns: 1fr; } }
 
 /* Cada obra */
 .artwork {
