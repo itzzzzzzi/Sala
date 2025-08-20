@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Header fijo -->
     <header>
         <div class="left">Send submissions to curator@sala.com</div>
         <div class="center">
@@ -16,8 +18,20 @@
         <div class="right">by Itziar Soto Sánchez</div>
     </header>
 
-    <main id="gallery">
-        <!-- Aquí se agregarán las obras -->
+    <!-- Galería -->
+    <main class="gallery">
+        <!-- Cada obra -->
+        <div class="artwork">
+            <img src="ruta-de-la-imagen.jpg" alt="Título de la obra">
+            <div class="info">
+                <p class="title"><em>Título de la obra</em></p>
+                <p class="artist">Nombre del artista</p>
+                <p class="materials">Materiales</p>
+                <p class="dimensions">Dimensiones</p>
+            </div>
+        </div>
+        <!-- Repite .artwork para cada obra -->
     </main>
+
 </body>
 </html>
