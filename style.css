@@ -48,4 +48,52 @@ header .subtitle {
 
 /* Galería */
 main.gallery {
-    margin-top: 100p
+    margin-top: 100px; /* espacio para headers */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px; /* espacio entre filas y columnas */
+    padding: 20px;
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 1200px) {
+    main.gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    main.gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    main.gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    main.gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Cada obra */
+.artwork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artwork img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.artwork .info {
+    text-align: center;
+    margin-top: 10px;
+}
