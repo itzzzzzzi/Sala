@@ -9,45 +9,50 @@ body {
     font-family: "Times New Roman", serif;
     background-color: #fff;
     color: #000;
-    font-size: 0.9rem; /* punto medio entre 1rem (antes) y 0.5rem */
 }
 
-/* Header fijo transparente */
+/* Header */
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 16px; /* también un punto medio */
-    z-index: 1000;
-    mix-blend-mode: difference;
-    color: #fff;
-    background: transparent;
+    padding: 10px 20px;
+}
+
+header .left,
+header .right {
+    font-size: 1rem; /* mismo tamaño que el nombre del artista */
+    color: #000;
 }
 
 header .center {
     text-align: center;
+    position: relative;
 }
 
 header h1 {
-    font-weight: normal; /* regular */
-    font-size: 1.5rem; /* punto medio entre 2rem y 1rem */
+    font-weight: normal; /* Sala en regular */
+    font-size: 1rem; /* mismo tamaño que el nombre del artista */
+    color: #000;
 }
 
-header .subtitle {
-    font-size: 0.7rem; /* equilibrado */
+header h1 sup.subtitle {
+    font-size: 0.7rem; /* superscript más pequeño */
+    position: relative;
+    top: -0.5em;
+    left: 0.2em;
+    mix-blend-mode: difference; /* efecto tipo "Difference" */
+    color: #fff;
 }
 
 /* Galería */
 main.gallery {
-    margin-top: 90px; /* espacio justo para el header */
+    margin-top: 60px; /* espacio para el header */
     display: grid;
-    grid-template-columns: repeat(5, 1fr); 
-    gap: 15px;
-    padding: 15px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
 }
 
 /* Ajuste para pantallas pequeñas */
@@ -90,10 +95,16 @@ main.gallery {
 
 .artwork .info {
     text-align: center;
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 .artwork .info p {
     margin: 2px 0;
-    font-size: 0.8rem; /* punto medio */
+}
+
+.artwork .info .title,
+.artwork .info .artist,
+.artwork .info .materials,
+.artwork .info .dimensions {
+    font-size: 1rem; /* tamaño estándar */
 }
