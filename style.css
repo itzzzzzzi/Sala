@@ -9,6 +9,7 @@ body {
     font-family: "Times New Roman", serif;
     background-color: #fff;
     color: #000;
+    font-size: 0.7rem; /* todo el texto por defecto */
 }
 
 /* Header fijo efecto Difference */
@@ -23,13 +24,13 @@ body {
 
 .header-fixed h1 {
     font-weight: normal;
-    font-size: 2rem; /* ajustable */
+    font-size: 2rem; /* solo Sala es más grande */
     color: white;
     mix-blend-mode: difference;
 }
 
 .header-fixed sup {
-    font-size: 0.6rem; /* ajustable */
+    font-size: 0.7rem;
 }
 
 /* Header original (negro, no fijo) */
@@ -42,67 +43,9 @@ header {
 }
 
 header .subtitle {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 /* Galería */
 main.gallery {
-    margin-top: 100px; /* espacio para headers */
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 40px; /* espacio entre filas y columnas */
-    padding: 20px;
-}
-
-/* Ajuste para pantallas pequeñas */
-@media (max-width: 1200px) {
-    main.gallery {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-@media (max-width: 992px) {
-    main.gallery {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    main.gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    main.gallery {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Cada obra */
-.artwork {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.artwork img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-
-.artwork .info {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.artwork .info p {
-    margin: 2px 0;
-    font-size: 0.8rem; /* mismo tamaño que el superscript y textos negros */
-}
-
-/* Espacio al final para scroll */
-.spacer {
-    height: 500px; /* ajustable */
-}
+    margin-top: 100p
