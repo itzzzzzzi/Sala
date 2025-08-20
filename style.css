@@ -22,7 +22,7 @@ header {
 
 header .left,
 header .right {
-    font-size: 1rem; /* mismo tamaño que el nombre del artista */
+    font-size: 0.7rem; /* mismo tamaño que el superscript */
     color: #000;
 }
 
@@ -33,7 +33,7 @@ header .center {
 
 header h1 {
     font-weight: normal; /* Sala en regular */
-    font-size: 1rem; /* mismo tamaño que el nombre del artista */
+    font-size: 1rem; /* tamaño principal */
     color: #000;
 }
 
