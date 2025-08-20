@@ -29,7 +29,7 @@ body {
 }
 
 .header-fixed sup {
-    font-size: 0.7rem; /* ajustable */
+    font-size: 0.6rem; /* ajustable */
 }
 
 /* Header original (negro, no fijo) */
@@ -42,7 +42,7 @@ header {
 }
 
 header .subtitle {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 /* Galería */
@@ -99,7 +99,7 @@ main.gallery {
 
 .artwork .info p {
     margin: 2px 0;
-    font-size: 0.7rem; /* mismo tamaño que el superscript y textos negros */
+    font-size: 0.8rem; /* mismo tamaño que el superscript y textos negros */
 }
 
 /* Espacio al final para scroll */
