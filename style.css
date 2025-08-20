@@ -9,63 +9,76 @@ body {
     font-family: "Times New Roman", serif;
     background-color: #fff;
     color: #000;
-    font-size: 0.7rem;
-    position: relative;
 }
 
-/* Header superior (send / by) */
+/* Header */
 header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
 }
 
-header .left {
-    text-align: left;
-}
-
+header .left,
 header .right {
-    text-align: right;
+    font-size: 0.7rem; /* mismo tamaño que el superscript */
+    color: #000;
 }
 
-/* Header fijo Sala + Permanent */
-.header-fixed {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1000;
-    pointer-events: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+header .center {
+    text-align: center;
+    position: relative;
 }
 
-.header-fixed h1 {
-    font-weight: normal;
-    font-size: 2rem;
-    color: black; /* negro sobre fondo blanco */
-    mix-blend-mode: difference; /* cambia sobre imágenes */
+header h1 {
+    font-weight: normal; /* Sala en regular */
+    font-size: 1rem; /* tamaño principal */
+    color: #000;
 }
 
-.header-fixed sup {
-    font-size: 0.7rem;
+header h1 sup.subtitle {
+    font-size: 0.7rem; /* superscript más pequeño */
+    position: relative;
+    top: -0.5em;
+    left: 0.2em;
+    mix-blend-mode: difference; /* efecto tipo "Difference" */
+    color: #fff;
 }
 
 /* Galería */
 main.gallery {
-    margin-top: 100px; /* espacio para headers */
+    margin-top: 60px; /* espacio para el header */
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 40px;
     padding: 20px;
 }
 
-@media (max-width: 1200px) { main.gallery { grid-template-columns: repeat(4, 1fr); } }
-@media (max-width: 992px)  { main.gallery { grid-template-columns: repeat(3, 1fr); } }
-@media (max-width: 768px)  { main.gallery { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 480px)  { main.gallery { grid-template-columns: 1fr; } }
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 1200px) {
+    main.gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    main.gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    main.gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    main.gallery {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* Cada obra */
 .artwork {
@@ -83,4 +96,15 @@ main.gallery {
 .artwork .info {
     text-align: center;
     margin-top: 10px;
+}
+
+.artwork .info p {
+    margin: 2px 0;
+}
+
+.artwork .info .title,
+.artwork .info .artist,
+.artwork .info .materials,
+.artwork .info .dimensions {
+    font-size: 0.7rem; /* tamaño estándar */
 }
