@@ -41,7 +41,7 @@ main.gallery {
     grid-template-columns: repeat(5, 1fr); /* 5 columnas fijas */
     gap: 20px;
     padding: 20px;
-    padding-bottom: 200px; /* espacio extra al final para maximizar scrolling */
+    padding-bottom: 1000px; /* espacio al final para scroll futuro */
 }
 
 /* Ajuste para pantallas pequeñas */
