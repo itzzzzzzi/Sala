@@ -9,7 +9,7 @@ body {
     font-family: "Times New Roman", serif;
     background-color: #fff;
     color: #000;
-    font-size: 0.5rem; /* la mitad de grande que antes */
+    font-size: 0.9rem; /* punto medio entre 1rem (antes) y 0.5rem */
 }
 
 /* Header fijo transparente */
@@ -21,11 +21,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 10px; /* reducido para compensar textos más pequeños */
+    padding: 8px 16px; /* también un punto medio */
     z-index: 1000;
-    mix-blend-mode: difference; /* efecto Photoshop "Difference" */
-    color: #fff; /* blanco por defecto para que se vea en negativo */
-    background: transparent; /* sin fondo */
+    mix-blend-mode: difference;
+    color: #fff;
+    background: transparent;
 }
 
 header .center {
@@ -33,21 +33,21 @@ header .center {
 }
 
 header h1 {
-    font-weight: normal; /* regular, no bold */
-    font-size: 1rem; /* reducido */
+    font-weight: normal; /* regular */
+    font-size: 1.5rem; /* punto medio entre 2rem y 1rem */
 }
 
 header .subtitle {
-    font-size: 0.4rem;
+    font-size: 0.7rem; /* equilibrado */
 }
 
 /* Galería */
 main.gallery {
-    margin-top: 80px; /* espacio para el header más compacto */
+    margin-top: 90px; /* espacio justo para el header */
     display: grid;
     grid-template-columns: repeat(5, 1fr); 
-    gap: 10px;
-    padding: 10px;
+    gap: 15px;
+    padding: 15px;
 }
 
 /* Ajuste para pantallas pequeñas */
@@ -90,10 +90,10 @@ main.gallery {
 
 .artwork .info {
     text-align: center;
-    margin-top: 5px;
+    margin-top: 8px;
 }
 
 .artwork .info p {
-    margin: 1px 0;
-    font-size: 0.4rem; /* más pequeño también */
+    margin: 2px 0;
+    font-size: 0.8rem; /* punto medio */
 }
