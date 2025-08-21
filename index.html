@@ -40,5 +40,17 @@
     <p>All images undergo a process of sustainable translation: optimized, reduced in size, and uploaded to a server powered by renewable energy. The project is able to have minimetric environmental impact without compromising the work.</p>
 </footer>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll('.artist').forEach(artist => {
+        const span = artist.querySelector('span');
+        if (span.scrollWidth > artist.clientWidth) {
+            artist.classList.add('long');
+        }
+    });
+});
+</script>
+
+    
 </body>
 </html>
