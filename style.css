@@ -87,23 +87,26 @@ main.gallery {
     }
 }
 
-/* Para pantallas de hasta 600px de ancho (teléfonos) */
+/* Header para móviles: todo en una línea */
 @media (max-width: 600px) {
     header h1 {
-        font-size: 20px; /* tamaño general para el header */
-        line-height: 1.1; /* ajusta si hace falta */
+        font-size: 8vw;       /* tamaño relativo al ancho de la pantalla */
+        white-space: nowrap;   /* evita que el texto se divida en varias líneas */
+        line-height: 1;        /* ajusta la altura de línea */
     }
 
     header h1 sup.subtitle {
-        font-size: 12px; /* superscript proporcional */
-        vertical-align: super; /* mantiene la posición de superscript */
+        font-size: 4vw;       /* superscript proporcional */
+        vertical-align: super;
     }
 
     header .left-link,
     header .right {
-        font-size: 16px; /* ajusta links laterales proporcionalmente */
+        font-size: 5vw;        /* links también escalados */
+        white-space: nowrap;
     }
 }
+
 
         
 /* Cada obra */
