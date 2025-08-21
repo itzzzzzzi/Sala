@@ -11,7 +11,7 @@ body {
     color: #000;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* asegura que el body ocupe toda la altura de la ventana */
+    min-height: 100vh;
 }
 
 /* Header */
@@ -62,29 +62,21 @@ main.gallery {
     grid-template-columns: repeat(5, 1fr);
     gap: 40px;
     padding: 20px;
-    flex: 1; /* ocupa todo el espacio disponible para empujar el footer abajo */
+    flex: 1; /* ocupa todo el espacio disponible */
 }
 
 /* Ajuste para pantallas pequeñas */
 @media (max-width: 1200px) {
-    main.gallery {
-        grid-template-columns: repeat(4, 1fr);
-    }
+    main.gallery { grid-template-columns: repeat(4, 1fr); }
 }
 @media (max-width: 992px) {
-    main.gallery {
-        grid-template-columns: repeat(3, 1fr);
-    }
+    main.gallery { grid-template-columns: repeat(3, 1fr); }
 }
 @media (max-width: 768px) {
-    main.gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    main.gallery { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 480px) {
-    main.gallery {
-        grid-template-columns: 1fr;
-    }
+    main.gallery { grid-template-columns: 1fr; }
 }
 
 /* Cada obra */
@@ -116,16 +108,43 @@ main.gallery {
     font-size: 0.7rem;
 }
 
+/* Animación sliding para artista */
+.artwork .artist {
+    font-size: 0.7rem;
+    white-space: nowrap;       /* evita salto de línea */
+    overflow: hidden;          /* oculta lo que no cabe */
+    display: block;
+    position: relative;
+    max-width: 100%;
+}
+
+.artwork .artist span {
+    display: inline-block;
+    padding-left: 0;
+    animation: none;
+    will-change: transform;
+}
+
+.artwork .artist.long span {
+    padding-left: 100%;
+    animation: slideText 8s linear infinite;
+}
+
+@keyframes slideText {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
 /* Footer */
 footer {
     width: 40%;
     text-align: center;
-    color: rgba(0, 0, 0, 0.5); /* gris 50% */
+    color: rgba(0, 0, 0, 0.5);
     font-size: 0.7rem;
     line-height: 0.8rem;
-    margin: 1rem auto 0.5rem auto; /* 1rem arriba, 1.5rem abajo, centrado horizontalmente */
+    margin: 1rem auto 0.5rem auto; /* margen inferior de 1.5rem */
 }
 
 footer p {
-    margin: 0.5rem 0; /* espacio entre párrafos */
+    margin: 0.5rem 0;
 }
