@@ -90,11 +90,14 @@ main.gallery {
 /* Para pantallas de hasta 600px de ancho (teléfonos) */
 @media (max-width: 600px) {
     header h1 {
-        font-size: 28px; /* tamaño más pequeño para móviles */
+        font-size: 0.5rem; /* tamaño más pequeño para móviles */
     }
 }
-
-
+    header h1 sup.subtitle {
+        font-size: 0.2rem; /* tamaño más pequeño para móviles */
+    }
+}
+        
 /* Cada obra */
 .artwork {
     display: flex;
