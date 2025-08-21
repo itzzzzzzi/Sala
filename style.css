@@ -119,7 +119,6 @@ main.gallery {
 /* Contenedor del artista largo */
 .long-artist {
     width: 208px;          /* ancho fijo de la columna */
-    height: 208px;         /* altura fija de la columna */
     overflow: hidden;      /* recorta el texto que sobrepasa */
     position: relative;
     white-space: nowrap;
