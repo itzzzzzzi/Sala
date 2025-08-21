@@ -116,10 +116,15 @@ main.gallery {
 }
 
 footer {
-    margin: 60px auto 40px auto;
-    max-width: 60%; /* ocupa aprox. del 2º al 4º bloque de la galería */
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%; /* como querías antes */
     text-align: center;
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 0.7rem;
-    line-height: 0.8rem; /* más compacto */
+    color: rgba(0, 0, 0, 0.5); /* negro 70% */
+    font-size: 0.7rem; /* mismo tamaño que la descripción de obras */
+    line-height: 0.8rem;
+    padding: 10px 0; /* opcional, para un poco de espacio arriba y abajo */
+    background: transparent; /* si no quieres fondo */
 }
