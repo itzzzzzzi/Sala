@@ -87,27 +87,27 @@ main.gallery {
     }
 }
 
-/* Header para móviles: todo en una línea, siempre visible */
+/* Header para móviles: todo en una línea obligatoriamente */
 @media (max-width: 600px) {
     header h1 {
-        font-size: clamp(8px, 6vw, 20px); /* mínimo 8px, máximo 20px, escala con ancho */
+        font-size: clamp(4px, 5vw, 20px); /* mínimo 4px, escala con ancho */
         white-space: nowrap;               /* evita saltos de línea */
-        line-height: 1;                    /* ajusta altura de línea */
-        overflow: hidden;                  /* recorta si algo falla */
-        text-overflow: ellipsis;           /* opcional, muestra "..." si no cabe (seguro no hará falta) */
+        line-height: 1;
+        overflow: hidden;
     }
 
     header h1 sup.subtitle {
-        font-size: clamp(4px, 3vw, 12px); /* escalado proporcional */
+        font-size: clamp(2px, 3vw, 12px); /* escalado proporcional al h1 */
         vertical-align: super;
     }
 
     header .left-link,
     header .right {
-        font-size: clamp(5px, 4vw, 16px); /* enlaces también escalables */
+        font-size: clamp(3px, 4vw, 16px);
         white-space: nowrap;
     }
 }
+
         
 /* Cada obra */
 .artwork {
