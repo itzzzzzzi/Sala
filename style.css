@@ -86,29 +86,7 @@ main.gallery {
         grid-template-columns: 1fr;
     }
 }
-
-/* Header para móviles: todo en una línea obligatoriamente */
-@media (max-width: 600px) {
-    header h1 {
-        font-size: clamp(4px, 5vw, 20px); /* mínimo 4px, escala con ancho */
-        white-space: nowrap;               /* evita saltos de línea */
-        line-height: 1;
-        overflow: hidden;
-    }
-
-    header h1 sup.subtitle {
-        font-size: clamp(2px, 3vw, 12px); /* escalado proporcional al h1 */
-        vertical-align: super;
-    }
-
-    header .left-link,
-    header .right {
-        font-size: clamp(3px, 4vw, 16px);
-        white-space: nowrap;
-    }
-}
-
-        
+    
 /* Cada obra */
 .artwork {
     display: flex;
