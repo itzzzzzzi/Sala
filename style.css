@@ -5,10 +5,18 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     font-family: "Times New Roman", serif;
     background-color: #fff;
     color: #000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* asegura que el body ocupe toda la altura de la ventana */
 }
 
 /* Header */
@@ -43,102 +51,4 @@ header h1 {
     color: #000;
 }
 
-header h1 sup.subtitle {
-    font-size: 0.7rem; /* superscript más pequeño */
-    position: relative;
-    top: -0.5em;
-    left: 0.2em;
-    mix-blend-mode: difference; /* efecto tipo "Difference" */
-    color: #fff;
-}
-
-/* Galería */
-main.gallery {
-    margin-top: 60px; /* espacio para el header */
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 40px;
-    padding: 20px;
-}
-
-/* Ajuste para pantallas pequeñas */
-@media (max-width: 1200px) {
-    main.gallery {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-@media (max-width: 992px) {
-    main.gallery {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    main.gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    main.gallery {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Cada obra */
-.artwork {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.artwork img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-
-.artwork .info {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.artwork .info p {
-    margin: 2px 0;
-}
-
-.artwork .info .title,
-.artwork .info .artist,
-.artwork .info .materials,
-.artwork .info .dimensions {
-    font-size: 0.7rem; /* tamaño estándar */
-}
-
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    flex: 1; /* ocupa todo el espacio disponible */
-}
-
-footer {
-    font-size: 0.7rem;
-    font-family: "Times New Roman", serif;
-    color: rgba(0, 0, 0, 0.5);
-    width: 40%
-    text-align: center;
-    line-height: 0.8rem;
-    margin-bottom: 1rem; /* margen inferior deseado */
-}
-footer p {
-    margin: 0.5rem 0; /* espacio entre párrafos */
-}
-
+header h1 sup.subtit
