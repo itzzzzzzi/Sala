@@ -91,19 +91,9 @@ main.gallery {
 @media (max-width: 600px) {
     header h1 {
         display: flex;
-        font-size: 8px;        /* tamaño más pequeño para mobile */
         flex-direction: column; /* pone los textos en columna */
         align-items: center;    /* centra horizontalmente */
     }
-
-    header h1 sup.subtitle {
-        display: block;        /* mostrar como bloque normal */
-        font-size: 6px;        /* tamaño más pequeño para mobile */
-        vertical-align: baseline; /* quitar el efecto de superscript */
-        margin-bottom: 1px;    /* un pequeño espacio antes de "Sala" */
-    }
-}
-
     
 /* Cada obra */
 .artwork {
