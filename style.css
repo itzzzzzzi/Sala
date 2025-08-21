@@ -90,16 +90,16 @@ main.gallery {
 /* Para pantallas de hasta 600px de ancho (teléfonos) */
 @media (max-width: 600px) {
     header h1 {
-        font-size: 0.8rem; /* tamaño más pequeño para móviles */
+        font-size: 0.6rem; /* tamaño más pequeño para móviles */
     }
 }
     header h1 sup.subtitle {
-        font-size: 0.4rem; /* tamaño más pequeño para móviles */
+        font-size: 0.2rem; /* tamaño más pequeño para móviles */
     }
 }
     header .left-link,
 header .right {
-        font-size: 0.4rem; /* tamaño más pequeño para móviles */
+        font-size: 0.2rem; /* tamaño más pequeño para móviles */
     }
 }
         
