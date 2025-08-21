@@ -23,27 +23,15 @@
 
     <!-- Galería -->
     <main class="gallery">
-    <!-- Primera obra con animación -->
-    <div class="artwork">
-        <img src="imagenes/Space for Tenderness.avif" alt="Space for Tenderness">
-        <div class="info">
-            <p class="title">Space for Tenderness</p>
-            <p class="artist marquee">Silvia & The Spyglass (Silvia Sánchez), silvia & the spyglass (Silvia Sánchez), silvia & the spyglass (Silvia Sánchez)</p>
-            <p class="materials">Ink, watercolor and mixed media (+ AR animation)</p>
-            <p class="dimensions">160 x 130 cm</p>
+        <div class="artwork">
+            <img src="imagenes/Space for Tenderness.avif" alt="Space for Tenderness">
+            <div class="info">
+                <p class="title"><em>Space for Tenderness</em></p>
+                <p class="artist">silvia & the spyglass (Silvia Sánchez)</p>
+                <p class="materials">Ink, watercolor and mixed media (+ AR animation) </p>
+                <p class="dimensions">160 x 130 cm</p>
+            </div>
         </div>
-    </div>
-
-    <!-- Segunda obra sin animación -->
-    <div class="artwork">
-        <img src="imagenes/Space for Tenderness.avif" alt="Space for Tenderness">
-        <div class="info">
-            <p class="title">Space for Tenderness</p>
-            <p class="artist">silvia & the spyglass (Silvia Sánchez)</p>
-            <p class="materials">Ink, watercolor and mixed media (+ AR animation)</p>
-            <p class="dimensions">160 x 130 cm</p>
-        </div>
-    </div>
     </main>
 
     <!-- Footer -->
@@ -52,16 +40,5 @@
     <p>All images undergo a process of sustainable translation: optimized, reduced in size, and uploaded to a server powered by renewable energy. The project is able to have minimetric environmental impact without compromising the work.</p>
 </footer>
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll('.artist.marquee').forEach(artist => {
-        const text = artist.innerText;
-        artist.innerHTML = `<span>${text} — ${text}</span>`;
-        artist.classList.add('long'); // activa animación
-    });
-});
-</script>
-
-    
 </body>
 </html>
