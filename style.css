@@ -102,10 +102,6 @@ main.gallery {
     top: -0.35em;             /* levanta un poco el sup */
   }
 
-  /* Deja más espacio arriba para el header de 2 filas */
-  main.gallery {
-    margin-top: 84px;         /* súbelo si ves solapamiento */
-  }
 }
 
 
