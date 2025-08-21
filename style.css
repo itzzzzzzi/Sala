@@ -93,7 +93,6 @@ main.gallery {
         display: flex;
         flex-direction: column; /* pone los textos en columna */
         align-items: center;    /* centra horizontalmente */
-        position: relative;
     }
 
     header h1 sup.subtitle {
