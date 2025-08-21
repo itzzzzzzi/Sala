@@ -93,13 +93,14 @@ main.gallery {
         display: flex;
         flex-direction: column; /* pone los textos en columna */
         align-items: center;    /* centra horizontalmente */
+        position: relative;
     }
 
     header h1 sup.subtitle {
         display: block;        /* mostrar como bloque normal */
-        font-size: 8px;        /* tamaño más pequeño para mobile */
+        font-size: 6px;        /* tamaño más pequeño para mobile */
         vertical-align: baseline; /* quitar el efecto de superscript */
-        margin-bottom: 2px;    /* un pequeño espacio antes de "Sala" */
+        margin-bottom: 1px;    /* un pequeño espacio antes de "Sala" */
     }
 }
 
