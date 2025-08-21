@@ -116,28 +116,32 @@ main.gallery {
     font-size: 0.7rem;
 }
 
-/* Contenedor del nombre largo */
+/* Contenedor del artista largo */
 .long-artist {
-    width: 100%;             /* respeta el ancho de la columna */
-    overflow: hidden;        /* recorta cualquier exceso */
-    white-space: nowrap;     /* sin saltos de línea */
-    box-sizing: border-box;
-    position: relative;
+    width: 100%;           /* respeta el ancho de la columna */
+    overflow: hidden;      /* recorta el exceso */
+    white-space: nowrap;   /* no saltos de línea */
+    position: relative;    /* referencia para el span absoluto */
+    height: 1em;           /* ajusta según tu font-size */
 }
 
-/* Texto animado dentro del contenedor */
+/* Texto animado */
 .long-artist span {
+    position: absolute;
+    left: 100%;            /* empieza fuera del contenedor a la derecha */
     display: inline-block;
-    padding-right: 100%;     /* espacio al final para que vuelva a empezar */
     animation: scrollArtist 10s linear infinite;
 }
 
-/* Animación de scroll horizontal */
+/* Animación */
 @keyframes scrollArtist {
-    0%   { transform: translateX(0); }
-    100% { transform: translateX(-50%); } /* ajustar según el texto */
+    0% {
+        left: 100%;       /* empieza fuera del lado derecho */
+    }
+    100% {
+        left: -100%;      /* termina fuera del lado izquierdo */
+    }
 }
-
 
 /* Footer */
 footer {
