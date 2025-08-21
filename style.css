@@ -117,10 +117,10 @@ main.gallery {
 
 footer {
     position: fixed;
-    bottom: 2rem;
+    bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%; /* ancho como lo querías */
+    width: 50%; /* ancho como lo querías */
     text-align: center;
     color: rgba(0, 0, 0, 0.5); /* negro 70% */
     font-size: 0.7rem; /* tamaño como descripción obras */
