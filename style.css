@@ -5,18 +5,10 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
 body {
     font-family: "Times New Roman", serif;
     background-color: #fff;
     color: #000;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* asegura que el body ocupe toda la altura de la ventana */
 }
 
 /* Header */
@@ -67,7 +59,6 @@ main.gallery {
     grid-template-columns: repeat(5, 1fr);
     gap: 40px;
     padding: 20px;
-    flex: 1; /* permite que main crezca y empuje el footer hacia abajo */
 }
 
 /* Ajuste para pantallas pequeñas */
@@ -124,15 +115,19 @@ main.gallery {
     font-size: 0.7rem; /* tamaño estándar */
 }
 
-/* Footer */
 footer {
-    font-size: 0.7rem;
-    font-family: "Times New Roman", serif;
-    color: rgba(0, 0, 0, 0.5); /* gris oscuro al 50% */
-    width: 40%; /* ancho limitado */
-    text-align: center; /* centrado horizontal */
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%; /* ancho como lo querías */
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5); /* negro 70% */
+    font-size: 0.7rem; /* tamaño como descripción obras */
     line-height: 0.8rem;
-    margin: 0 auto 1rem auto; /* centrado y margen inferior */
+    margin: 0; /* quitar cualquier margen */
+    padding: 0; /* quitar cualquier padding */
+    background: transparent;
 }
 
 footer p {
