@@ -117,17 +117,10 @@ main.gallery {
 
 /* Footer */
 footer {
-    margin-top: 60px;
-    padding: 20px;
+    margin: 60px auto 40px auto;
+    max-width: 60%; /* ocupa aprox. del 2º al 4º bloque de la galería */
     text-align: center;
-}
-
-footer p {
-    font-size: 0.7rem; /* igual que las obras */
-    color: rgba(0, 0, 0, 0.7); /* negro al 70% */
-    margin-bottom: 10px;
-    max-width: 60ch; /* limita a ~93 caracteres por línea */
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.4;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.7rem;
+    line-height: 0.8rem; /* más compacto */
 }
