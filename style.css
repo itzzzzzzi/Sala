@@ -51,4 +51,90 @@ header h1 {
     color: #000;
 }
 
-header h1 sup.subtit
+header h1 sup.subtitle {
+    font-size: 0.7rem; /* superscript más pequeño */
+    position: relative;
+    top: -0.5em;
+    left: 0.2em;
+    mix-blend-mode: difference; /* efecto tipo "Difference" */
+    color: #fff;
+}
+
+/* Galería */
+main.gallery {
+    margin-top: 60px; /* espacio para el header */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+    padding: 20px;
+    flex: 1; /* permite que main crezca y empuje el footer hacia abajo */
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 1200px) {
+    main.gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    main.gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    main.gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    main.gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Cada obra */
+.artwork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artwork img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.artwork .info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.artwork .info p {
+    margin: 2px 0;
+}
+
+.artwork .info .title,
+.artwork .info .artist,
+.artwork .info .materials,
+.artwork .info .dimensions {
+    font-size: 0.7rem; /* tamaño estándar */
+}
+
+/* Footer */
+footer {
+    font-size: 0.7rem;
+    font-family: "Times New Roman", serif;
+    color: rgba(0, 0, 0, 0.5); /* gris oscuro al 50% */
+    width: 40%; /* ancho limitado */
+    text-align: center; /* centrado horizontal */
+    line-height: 0.8rem;
+    margin: 0 auto 1rem auto; /* centrado y margen inferior */
+}
+
+footer p {
+    margin: 0.5rem 0; /* espacio entre párrafos */
+}
