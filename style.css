@@ -87,6 +87,42 @@ main.gallery {
     }
 }
 
+/* Versión mobile */
+@media (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: column; /* colocamos el header en dos filas */
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Primera fila: links izquierda y derecha */
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 10px; /* ajusta el tamaño */
+    margin-bottom: 4px;
+  }
+
+  .header-top .left-link {
+    text-align: left;
+  }
+
+  .header-top .right {
+    text-align: right;
+  }
+
+  /* Segunda fila: el título Sala centrado */
+  .header-title {
+    font-size: 12px; /* ajusta según el espacio */
+  }
+
+  .header-title sup.subtitle {
+    font-size: 7px;
+  }
+}
+
 /* Cada obra */
 .artwork {
     display: flex;
