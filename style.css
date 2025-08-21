@@ -120,11 +120,13 @@ footer {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%; /* como querías antes */
+    width: 60%; /* ancho como lo querías */
     text-align: center;
     color: rgba(0, 0, 0, 0.5); /* negro 70% */
-    font-size: 0.7rem; /* mismo tamaño que la descripción de obras */
+    font-size: 0.7rem; /* tamaño como descripción obras */
     line-height: 0.8rem;
-    padding: 10px 0; /* opcional, para un poco de espacio arriba y abajo */
-    background: transparent; /* si no quieres fondo */
+    margin: 0; /* quitar cualquier margen */
+    padding: 0; /* quitar cualquier padding */
+    background: transparent;
 }
+
