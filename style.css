@@ -116,6 +116,33 @@ main.gallery {
     font-size: 0.7rem;
 }
 
+/* Scroll horizontal para artistas largos */
+.long-artist {
+    display: inline-block;
+    white-space: nowrap;       /* no permite saltos de línea */
+    overflow: hidden;          /* recorta el texto fuera del contenedor */
+    max-width: 100%;           /* se ajusta al ancho de la columna */
+    position: relative;
+}
+
+.long-artist::after {
+    content: '';
+    display: inline-block;
+    width: 100%;               /* espacio extra al final para que el scroll se vea bien */
+}
+
+@keyframes scrollArtist {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.long-artist span {
+    display: inline-block;
+    padding-left: 100%;       /* espacio inicial antes de que empiece a moverse */
+    animation: scrollArtist 10s linear infinite;
+}
+
+
 /* Footer */
 footer {
     width: 40%;
