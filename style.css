@@ -115,16 +115,30 @@ main.gallery {
     font-size: 0.7rem; /* tamaño estándar */
 }
 
-footer {
-    width: 100%;
-    font-size: 0.7rem; /* mismo tamaño que la descripción de obras */
-    font-family: "Times New Roman", serif;
-    color: rgba(0, 0, 0, 0.5); /* negro 70% */
-    text-align: center;
-    line-height: 0.8rem;
-    margin-bottom: 1rem; /* espacio sobre el footer */
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* ocupa todo el espacio disponible */
+}
+
+footer {
+    font-size: 0.7rem;
+    font-family: "Times New Roman", serif;
+    color: rgba(0, 0, 0, 0.5);
+    width: 40%
+    text-align: center;
+    line-height: 0.8rem;
+    margin-bottom: 1rem; /* margen inferior deseado */
+}
 footer p {
     margin: 0.5rem 0; /* espacio entre párrafos */
 }
+
