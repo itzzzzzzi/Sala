@@ -55,14 +55,18 @@ header h1 sup.subtitle {
     color: #fff;
 }
 
-/* Galería */
-main.gallery {
-    margin-top: 60px;
+/* --- Galería en una sola columna en móvil --- */
+@media (max-width: 600px) {
+  main.gallery {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 40px;
-    padding: 20px;
-    flex: 1; /* ocupa todo el espacio disponible para empujar el footer abajo */
+    grid-template-columns: 1fr; /* solo 1 columna */
+    gap: 16px;                  /* espacio entre filas */
+    margin-top: 84px;           /* deja sitio para el header de 2 filas */
+  }
+
+  main.gallery .column {
+    width: 100%;                /* cada item ocupa todo el ancho */
+  }
 }
 
 /* Ajuste para pantallas pequeñas */
