@@ -121,7 +121,7 @@ main.gallery {
     overflow: hidden;      /* recorta el texto fuera del contenedor */
     white-space: nowrap;    /* mantiene el texto en una sola línea */
     display: block;
-    width: 100%;           /* ancho máximo de la columna */
+    width: 20%;           /* ancho máximo de la columna */
     position: relative;
     height: 1em;           /* altura del texto */
 }
