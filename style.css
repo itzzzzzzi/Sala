@@ -91,6 +91,7 @@ main.gallery {
 @media (max-width: 600px) {
     header h1 {
         display: flex;
+        font-size: 8px;        /* tamaño más pequeño para mobile */
         flex-direction: column; /* pone los textos en columna */
         align-items: center;    /* centra horizontalmente */
     }
