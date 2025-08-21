@@ -130,3 +130,6 @@ footer {
     background: transparent;
 }
 
+footer p {
+    margin: 0.5rem 0; /* espacio entre párrafos */
+}
