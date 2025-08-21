@@ -113,24 +113,18 @@ main.gallery {
     font-size: 0.7rem;
     white-space: nowrap;       /* evita salto de línea */
     overflow: hidden;          /* oculta lo que no cabe */
-    display: block;
     position: relative;
-    max-width: 100%;
+    width: 100%;
+    display: block;
 }
 
-.artwork .artist span {
+.artwork .artist .marquee {
     display: inline-block;
-    padding-left: 0;
-    animation: none;
-    will-change: transform;
+    padding-left: 100%;        /* espacio inicial para entrar */
+    animation: marquee 10s linear infinite;
 }
 
-.artwork .artist.long span {
-    padding-left: 100%;
-    animation: slideText 8s linear infinite;
-}
-
-@keyframes slideText {
+@keyframes marquee {
     0% { transform: translateX(0); }
     100% { transform: translateX(-100%); }
 }
@@ -142,7 +136,7 @@ footer {
     color: rgba(0, 0, 0, 0.5);
     font-size: 0.7rem;
     line-height: 0.8rem;
-    margin: 1rem auto 0.5rem auto; /* margen inferior de 1.5rem */
+    margin: 1rem auto 0.5rem auto;
 }
 
 footer p {
