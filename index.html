@@ -1,164 +1,28 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Galería de Obras</title>
-<style>
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Times New Roman", serif;
-    background-color: #fff;
-    color: #000;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-/* Header */
-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-header .left-link,
-header .right {
-    font-size: 0.7rem;
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-header .left-link:hover {
-    text-decoration: underline;
-}
-
-header .center {
-    text-align: center;
-    position: relative;
-}
-
-header h1 {
-    font-weight: normal;
-    font-size: 1rem;
-    color: #000;
-}
-
-header h1 sup.subtitle {
-    font-size: 0.7rem;
-    position: relative;
-    top: -0.5em;
-    left: 0.2em;
-    mix-blend-mode: difference;
-    color: #fff;
-}
-
-/* Galería */
-main.gallery {
-    margin-top: 60px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 40px;
-    padding: 20px;
-    flex: 1;
-}
-
-@media (max-width: 1200px) { main.gallery { grid-template-columns: repeat(4, 1fr); } }
-@media (max-width: 992px)  { main.gallery { grid-template-columns: repeat(3, 1fr); } }
-@media (max-width: 768px)  { main.gallery { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 480px)  { main.gallery { grid-template-columns: 1fr; } }
-
-/* Cada obra */
-.artwork {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 208px;
-}
-
-.artwork img {
-    width: 100%;
-    max-width: 208px;
-    max-height: 208px;
-    object-fit: contain;
-}
-
-.artwork .info {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.artwork .info p {
-    margin: 2px 0;
-}
-
-.artwork .info .title,
-.artwork .info .artist,
-.artwork .info .materials,
-.artwork .info .dimensions {
-    font-size: 0.7rem;
-}
-
-/* Animación sliding para artista */
-.artwork .artist {
-    font-size: 0.7rem;
-    white-space: nowrap;
-    overflow: hidden;
-    display: block;
-    position: relative;
-    max-width: 100%;
-}
-
-.artwork .artist span {
-    display: inline-block;
-    padding-left: 0;
-    animation: none;
-    will-change: transform;
-}
-
-.artwork .artist.long span {
-    padding-left: 100%;
-    animation: slideText 8s linear infinite;
-}
-
-@keyframes slideText {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
-}
-
-/* Footer */
-footer {
-    width: 40%;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 0.7rem;
-    line-height: 0.8rem;
-    margin: 1rem auto 0.5rem auto;
-}
-
-footer p { margin: 0.5rem 0; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sala</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <a href="#" class="left-link">← Back</a>
-    <div class="center">
-        <h1>Galería de Arte <sup class="subtitle">2025</sup></h1>
-    </div>
-    <div class="right">Info</div>
-</header>
+    <!-- Header -->
+    <header>
+        <a class="left-link" href="mailto:salacuration@gmail.com?subject=Submission%20to%20Sala's%20Collection&body=Title:%0AArtist:%0AMaterials:%0ADimensions:">
+        Send submissions to salacuration@gmail.com
+        </a>
+        
+        <div class="center">
+            <h1>Sala <sup class="subtitle">Permanent Minimetric Collection</sup></h1>
+        </div>
+        
+        <div class="right">by Itziar Soto Sánchez</div>
+    </header>
 
-<main class="gallery">
+    <!-- Galería -->
+    <main class="gallery">
     <!-- Primera obra con animación -->
     <div class="artwork">
         <img src="imagenes/Space for Tenderness.avif" alt="Space for Tenderness">
@@ -180,10 +44,12 @@ footer p { margin: 0.5rem 0; }
             <p class="dimensions">160 x 130 cm</p>
         </div>
     </div>
-</main>
+    </main>
 
+    <!-- Footer -->
 <footer>
-    <p>© 2025 Galería de Arte</p>
+    <p>Sala is a permanent art collection, an archive of visual culture, that combines research material with curated artist submissions. Seeking to sustainably preserve and showcase emerging artistic voices, Sala offers a space that redefines permanence while transcending physical and institutional boundaries.</p>
+    <p>All images undergo a process of sustainable translation: optimized, reduced in size, and uploaded to a server powered by renewable energy. The project is able to have minimetric environmental impact without compromising the work.</p>
 </footer>
 
 <script>
@@ -196,5 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
+    
 </body>
 </html>
