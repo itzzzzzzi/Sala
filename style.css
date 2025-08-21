@@ -90,18 +90,21 @@ main.gallery {
 /* Para pantallas de hasta 600px de ancho (teléfonos) */
 @media (max-width: 600px) {
     header h1 {
-        font-size: 5px; /* tamaño más pequeño para móviles */
+        font-size: 20px; /* tamaño general para el header */
+        line-height: 1.1; /* ajusta si hace falta */
     }
-}
+
     header h1 sup.subtitle {
-        font-size: 1px; /* tamaño más pequeño para móviles */
+        font-size: 12px; /* superscript proporcional */
+        vertical-align: super; /* mantiene la posición de superscript */
     }
-}
+
     header .left-link,
-header .right {
-        font-size: 1px; /* tamaño más pequeño para móviles */
+    header .right {
+        font-size: 16px; /* ajusta links laterales proporcionalmente */
     }
 }
+
         
 /* Cada obra */
 .artwork {
