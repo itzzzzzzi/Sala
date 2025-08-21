@@ -62,7 +62,7 @@ main.gallery {
     grid-template-columns: repeat(5, 1fr);
     gap: 40px;
     padding: 20px;
-    flex: 1; /* ocupa todo el espacio disponible para empujar el footer abajo */
+    flex: 1; /* ocupa todo el espacio disponible */
 }
 
 /* Ajuste para pantallas pequeñas */
@@ -92,11 +92,13 @@ main.gallery {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 208px; /* ancho máximo del contenedor */
 }
 
 .artwork img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    max-width: 208px;   /* ancho máximo */
+    max-height: 208px;  /* alto máximo */
     object-fit: contain;
 }
 
