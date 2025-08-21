@@ -94,12 +94,12 @@ main.gallery {
     }
 }
     header h1 sup.subtitle {
-        font-size: 2px; /* tamaño más pequeño para móviles */
+        font-size: 5px; /* tamaño más pequeño para móviles */
     }
 }
     header .left-link,
 header .right {
-        font-size: 2px; /* tamaño más pequeño para móviles */
+        font-size: 1rem; /* tamaño más pequeño para móviles */
     }
 }
         
