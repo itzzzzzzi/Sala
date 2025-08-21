@@ -151,18 +151,23 @@ footer {
     font-size: 0.7rem;
     line-height: 0.8rem;
     margin: 1rem auto 0.5rem auto;
-    position: relative; /* necesario para colocar el link */
 }
 
-footer .privacy-link {
-    position: absolute;
-    right: 20px; /* mismo margen derecho que el header */
-    bottom: -1.2rem; /* coloca el link justo debajo del texto */
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Enlace Privacy abajo a la derecha */
+.privacy-link {
+    position: fixed;
+    right: 20px; /* igual margen que el header */
+    bottom: 0.5rem; /* misma altura de margen inferior que el footer */
     font-size: 0.7rem;
     color: rgba(0, 0, 0, 0.25);
     text-decoration: none;
 }
 
-footer .privacy-link:hover {
+.privacy-link:hover {
     text-decoration: underline;
 }
+
