@@ -116,17 +116,13 @@ main.gallery {
 }
 
 footer {
-    bottom: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 45%; /* ancho como lo querías */
-    text-align: center;
+    width: 100%;
+    font-size: 0.7rem; /* mismo tamaño que la descripción de obras */
+    font-family: "Times New Roman", serif;
     color: rgba(0, 0, 0, 0.5); /* negro 70% */
-    font-size: 0.7rem; /* tamaño como descripción obras */
+    text-align: center;
     line-height: 0.8rem;
-    margin: 0; /* quitar cualquier margen */
-    padding: 0; /* quitar cualquier padding */
-    background: transparent;
+    margin-bottom: 1rem; /* espacio sobre el footer */
 }
 
 footer p {
