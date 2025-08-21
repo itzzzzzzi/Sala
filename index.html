@@ -55,10 +55,8 @@
 <script>
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll('.artist').forEach(artist => {
-        const span = artist.querySelector('span');
-        if (span.scrollWidth > artist.clientWidth) {
-            artist.classList.add('long');
-        }
+        const text = artist.innerText;
+        artist.innerHTML = `<span class="marquee">${text} — ${text}</span>`;
     });
 });
 </script>
