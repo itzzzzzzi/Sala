@@ -162,6 +162,7 @@ main.gallery {
     box-sizing: border-box;
     display: flex;         /* para centrar verticalmente el texto si quieres */
     align-items: center;   /* centra el texto verticalmente */
+    font-size: 0.7rem;
 }
 
 /* Texto animado */
