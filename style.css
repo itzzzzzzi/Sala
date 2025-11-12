@@ -178,6 +178,21 @@ main.gallery {
     100% { transform: translateX(-100%); }
 }
 
+/* Evitar que los navegadores móviles cambien tamaño de fuente */
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+/* Asegurar coherencia tipográfica en .long-artist */
+.long-artist,
+.long-artist span {
+    font-family: "Times New Roman", serif;
+    font-size: 0.7rem;
+    font-weight: normal;
+    color: #000;
+}
+
 /* Footer */
 footer {
     width: 40%;
